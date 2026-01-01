@@ -4,5 +4,5 @@ const app = require('../index');
 test('Health API returns UP', async () => {
   const res = await request(app).get('/health');
   expect(res.statusCode).toBe(200);
-  expect(res.body.status).toBe('Application is up and running');
+  expect(res.body.status).toBe('UP');
 });
